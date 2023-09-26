@@ -117,7 +117,4 @@ function searchPatient(val) {
 
         cardContainer.innerHTML += plantillaActual;
     }
-
-
-
 }
