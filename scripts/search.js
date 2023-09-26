@@ -54,7 +54,7 @@ document.getElementById('searchbar').addEventListener('input', function (event) 
         const plantilla = `
     <div class="cards">
         <div class="cardContent">
-            <label><b>Nombre completa</b>: {{fullName}}</label>
+            <label><b>Nombre completo</b>: {{fullName}}</label>
             <label><b>Fecha de nacimiento</b>: {{birthdate}}</label>
             <label><b>Género</b>: {{gender}}</label>
             <label><b>Tipo de sangre</b>: {{bloodType}}</label>
@@ -96,7 +96,7 @@ function searchPatient(val) {
     const plantilla = `
     <div class="cards">
         <div class="cardContent">
-            <label><b>Nombre completa</b>: {{fullName}}</label>
+            <label><b>Nombre completo</b>: {{fullName}}</label>
             <label><b>Fecha de nacimiento</b>: {{birthdate}}</label>
             <label><b>Género</b>: {{gender}}</label>
             <label><b>Tipo de sangre</b>: {{bloodType}}</label>
