@@ -80,6 +80,7 @@ document.getElementById('searchbar').addEventListener('input', function (event) 
 });
 
 function searchPatient(val) {
+    val = val.toLowerCase(); // Convertir el valor de entrada a minúsculas
     const patientList = JSON.parse(localStorage.getItem('patientList'));
     var searchResult = [];
 
@@ -87,7 +88,7 @@ function searchPatient(val) {
 
         const actualPatient = patientList[patient]
         if (actualPatient.fullName.toLowerCase().includes(val) || actualPatient.idNumber.toLowerCase().includes(val)) {
-            searchResult.push(patientList[patient])
+            searchResult.push(patientList[patient]);
         }
         console.log(val)
     }
